@@ -1,0 +1,93 @@
+.about-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    background-color: var(--black)
+}
+.about-overlay{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:absolute;
+    inset:0;
+}
+
+.about-overlay img{
+    width:391px;
+    height:415px;
+    z-index:0;
+}
+
+.about-content{
+    color: white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+    width:100%;
+    padding:80px;
+    font-family: var(--baseFont)
+}
+
+.about-content-us{
+   flex: 1;
+   display:flex;
+   justify-content: flex-end;
+   align-items:flex-end;
+   flex-direction:column;
+
+   text-align:right;
+}
+
+.about-content-us h1,
+.about-content-history h1{
+    color: var(--golden)
+}
+
+.about-content-knife{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0 40px;
+}
+
+.about-content-knife img{
+  height:703px;
+  width:84px;
+}
+
+.about-content-history{
+    flex: 1;
+   display:flex;
+   justify-content: flex-start;
+   align-items:flex-start;
+   flex-direction:column;
+}
+
+.about-content-history p,
+.about-content-us p{
+    margin: 30px 0px;
+}
+
+
+@media(max-width:768px){
+
+    .about-content{
+        padding: 20px 5px;
+        flex-direction:column;
+    }
+
+    .about-content-knife{
+        margin:4rem 0;
+    }
+    .about-content-knife img{
+        height:400px;
+        width:100%;
+      }
+
+      .about-content-history p,
+      .about-content-us p{
+          margin: 20px 10px;
+      }
+}
