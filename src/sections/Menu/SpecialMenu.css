@@ -1,0 +1,32 @@
+.menu-container{
+    background-color: var(--black);
+    color:white;
+    text-align:center;
+    font-family: var(--baseFont);
+}
+
+.menu-title-container h1{
+    font-size:62px;
+    line-height:83.2px;
+    weight:600;
+    color:var(--golden);
+    margin-bottom:20px;
+}
+
+.menu-content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:100px;
+}
+
+.menu-image-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.menu-image-container img{
+    width:444px;
+    height:659px;
+}

@@ -9,7 +9,7 @@ const AboutUs = () => (
 
     <div className='about-content'>
         <div className='about-content-us'>
-          <h1>Abour Us</h1>
+          <h1>About Us</h1>
           <img src={images.spoon}/>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
           <button className='header-button'>
