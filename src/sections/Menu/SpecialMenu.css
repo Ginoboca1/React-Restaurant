@@ -27,6 +27,42 @@
 }
 
 .menu-image-container img{
-    width:444px;
-    height:659px;
+    width:300px;
+    height:509px;
+}
+
+.menu-card-wines{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.menu-card-cocktails{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.menu-items{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    width:100%;
+}
+
+@media screen and (max-width:768px){
+    .menu-content{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+        padding:30px;
+        gap:20px;
+    }
+
+    .menu-cards-cocktails{
+        display:flex;
+        align-items:flex-end;
+        margin-top:20px;
+    }
 }

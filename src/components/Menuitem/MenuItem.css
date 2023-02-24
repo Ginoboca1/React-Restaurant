@@ -1,0 +1,32 @@
+.menu-item-container{
+    display: flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.menu-item-head{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.menu-item-head p{
+    color: var(--golden);
+    line-height:29.9px;
+    font-size:17px;
+}
+
+.menu-item-dash{
+    width: 90px;
+    height: 1px;
+    background-color:var(--golden);
+    margin:0 32px;
+}
+
+.menu-item-tags{
+    font-size:12px;
+    color:var(--grey);
+    line-height: 175%;
+    font-weight: 400;
+}
