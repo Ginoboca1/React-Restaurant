@@ -9,7 +9,7 @@ const AboutUs = () => (
 
     <div className='about-content'>
         <div className='about-content-us'>
-          <h1>About Us</h1>
+          <h2>About Us</h2>
           <img src={images.spoon}/>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
           <button className='header-button'>
@@ -22,7 +22,7 @@ const AboutUs = () => (
         </div>
 
         <div className='about-content-history'>
-          <h1>Our History</h1>
+          <h2>Our History</h2>
           <img src={images.spoon}/>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
           <button className='header-button'>

@@ -40,10 +40,7 @@
    text-align:right;
 }
 
-.about-content-us h1,
-.about-content-history h1{
-    color: var(--golden)
-}
+
 
 .about-content-knife{
     display:flex;
@@ -76,6 +73,10 @@
     .about-content{
         padding: 20px 5px;
         flex-direction:column;
+    }
+    .about-content-history,
+    .about-content-us{
+        padding: 0 20px;
     }
 
     .about-content-knife{

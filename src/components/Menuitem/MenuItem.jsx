@@ -12,7 +12,7 @@ const MenuItem = ({title, price, tags}) => {
       </div>
 
       <div className='menu-item-tags'>
-        <p>{tags}</p>
+        <p className='tags'>{tags}</p>
       </div>
     </div>
   )

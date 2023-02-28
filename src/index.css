@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Playfair+Display&display=swap');
-:root {
 
+:root {
   --mainFont: 'Outfit', sans-serif;
   --baseFont: 'Playfair Display', serif;
   --golden: #DCCA87;
@@ -18,8 +18,89 @@
   scroll-behavior: smooth;
 }
 
-body{
+
+h1,h2,h3,h4,h5{
+    font-family: var(--baseFont);
+    color: var(--golden);
+}
+
+h1{
+  font-size:90px;
+  line-height:117px;
+}
+
+h2{
+  font-size:64px;
+  line-height: 130%;
+}
+
+h5{
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 130%;
+  /* identical to box height, or 30px */
+
+letter-spacing: 0.04em;
+text-transform: capitalize;
+font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--grey);
     font-family: var(--mainFont);
+}
+
+a{
+    text-decoration:none;
+    color:var(--white);
+    transition: 0.5s ease;
+    cursor:pointer;
+    font-family: var(--baseFont);
+}
+
+a:hover{
+    color:var(--grey);
+    border-bottom: 1px solid var(--golden);
+}
+
+a:active{
+  -webkit-tap-highlight-color: transparent;
+}
+
+.p__title{
+  font-family:var(--baseFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  }
+
+button{
+  background-color: var(--golden);
+  font-family: var(--baseFont);
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  line-height: 28px;
+  border-radius: 1px;
+  letter-spacing: 0.04em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top:20px;
+  transition: 0.3s ease;
+}
+
+button:hover{
+  background-color: var(--grey);
 }
 
 

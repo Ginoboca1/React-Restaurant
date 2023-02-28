@@ -1,0 +1,54 @@
+.laurels-section{
+    background-color:black;
+    height:945px;
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px;
+}
+
+
+.laurels-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    margin-top:70px;
+    gap:20px;
+}
+
+.laurel{
+    display:flex;
+    gap:20px;
+}
+
+.laurel img{
+    width:60px;
+    height:60px;
+}
+
+.laurels-image img{
+    width:425px;
+    height:532px;
+}
+
+@media screen and (max-width:768px){
+    .laurels-section{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
+        padding:50px 0px;
+    }
+
+    .laurels-container{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .laurels-image img{
+        width:350px;
+        height:440px;
+    }
+}

@@ -1,0 +1,69 @@
+.chef-container{
+    background-color: var(--black);
+    display:flex;
+    justify-content:center;
+    padding:80px;
+}
+
+.chef-content-container{
+    width:1300px;
+    height:789px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    font-family:var(--baseFont);
+}
+
+.chef-image img{
+    width: 505px;
+    height: 589px;
+}
+
+.chef-words{
+    height:450px;
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:50px;
+}
+
+.chef-title-container p {
+    color: var(--white);
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+
+.chef-words p {
+    font-style: italic;
+}
+
+.chef-words-signature p{
+    font-size: 12px;
+    line-height: 130%;
+}
+
+@media screen and (max-width:768px){
+
+    .chef-container{
+        padding:100px 0;
+    }
+
+    .chef-content-container{
+        display:flex;
+        flex-direction:column-reverse;
+        gap:100px;
+        max-width: 100vh;
+    }
+
+    .chef-image img{
+        max-width: 414px;
+        height: 476px;
+    }
+
+    .chef-words{
+        padding: 0 20px;
+    }
+}

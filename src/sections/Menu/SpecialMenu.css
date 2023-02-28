@@ -6,10 +6,7 @@
 }
 
 .menu-title-container h1{
-    font-size:62px;
     line-height:83.2px;
-    weight:600;
-    color:var(--golden);
     margin-bottom:20px;
 }
 
@@ -35,6 +32,16 @@
     display:flex;
     flex-direction:column;
     gap:30px;
+}
+
+.menu-card-wines h4{
+    font-size:25px;
+    font-weight:500;
+}
+
+.menu-card-cocktails h4{
+    font-size:25px;
+    font-weight:500;
 }
 
 .menu-card-cocktails{
@@ -64,5 +71,9 @@
         display:flex;
         align-items:flex-end;
         margin-top:20px;
+    }
+
+    .menu-container{
+        padding-bottom:200px;
     }
 }
