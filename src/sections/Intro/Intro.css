@@ -1,6 +1,7 @@
 .video-container{
     height: 100vh;
     position: relative;
+    background-color:black;
 }
 .video-container video{
     width:100%;
@@ -31,4 +32,10 @@
     border: solid var(--golden);
     border-radius:50%;
     cursor:pointer;
+}
+
+@media screen and (max-width:768px){
+    .video-container{
+        padding-bottom:100px;
+    }
 }

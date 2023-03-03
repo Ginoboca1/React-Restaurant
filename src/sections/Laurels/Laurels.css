@@ -1,11 +1,11 @@
 .laurels-section{
-    background-color:black;
-    height:945px;
+    background-color:var(--black);
+    height:948px;
     position:relative;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:70px;
+    padding:0 70px;
 }
 
 
@@ -38,7 +38,7 @@
         align-items:center;
         justify-content:center;
         gap:20px;
-        padding:50px 0px;
+        height:1140px;
     }
 
     .laurels-container{
