@@ -3,10 +3,11 @@ import { useState } from "react";
 
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { FaList } from "react-icons/fa";
+import { Modal } from "../Modal/Modal";
 
 import "../Navbar/Navbar.css";
 
-export const Navbar = () => {
+export const Navbar = ({ setShowModal, setMessage }) => {
   const [clicked, setClicked] = useState(false);
 
   return (
@@ -15,7 +16,13 @@ export const Navbar = () => {
         <img src={images.gericht} alt="app logo" />
       </div>
 
-      <ul className="navbar-menu">
+      <ul
+        className="navbar-menu"
+        onClick={() => {
+          setShowModal(true);
+          setMessage("This section is currently unavailable.");
+        }}
+      >
         <li>
           <a href="#">Home</a>
         </li>
@@ -34,9 +41,25 @@ export const Navbar = () => {
       </ul>
 
       <div className="navbar-log">
-        <a href="#">Log In</a>
+        <a
+          href="#"
+          onClick={() => {
+            setShowModal(true);
+            setMessage("This section is currently unavailable.");
+          }}
+        >
+          Log In
+        </a>
         <div className="space-bar"></div>
-        <a href="#">Book Table</a>
+        <a
+          href="#"
+          onClick={() => {
+            setShowModal(true);
+            setMessage("This section is currently unavailable.");
+          }}
+        >
+          Book Table
+        </a>
       </div>
 
       <div className="navbar-smallScreen">
@@ -44,7 +67,10 @@ export const Navbar = () => {
 
         {clicked && (
           <div className="navbar-smallScreen-overlay flex_center slide-bottom ">
-            <MdOutlineRestaurantMenu className="overlay__close" onClick={() => setClicked(false)} />
+            <MdOutlineRestaurantMenu
+              className="overlay__close"
+              onClick={() => setClicked(false)}
+            />
             <ul className="navbar-menu-smallScreen">
               <li>
                 <a href="#">Home</a>

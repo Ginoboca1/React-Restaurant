@@ -2,12 +2,9 @@ import MenuItem from "../../components/Menuitem/MenuItem";
 import images from "../../constants/images";
 import data from "../../constants/data";
 
-
-
 import "./SpecialMenu.css";
 
-const SpecialMenu = () => {
-
+const SpecialMenu = ({ setShowModal, setMessage }) => {
   return (
     <div className="menu-container">
       <div className="menu-title-container">
@@ -20,10 +17,14 @@ const SpecialMenu = () => {
         <section className="menu-card-wines">
           <h4>Wine & Beer</h4>
           <div className="menu-items">
-          {data.wines.map((wine, index) =>
-                <MenuItem key={wine.title + index} title ={wine.title} price = {wine.price} tags = {wine.tags} />
-              )
-            }
+            {data.wines.map((wine, index) => (
+              <MenuItem
+                key={wine.title + index}
+                title={wine.title}
+                price={wine.price}
+                tags={wine.tags}
+              />
+            ))}
           </div>
         </section>
 
@@ -34,15 +35,27 @@ const SpecialMenu = () => {
         <section className="menu-card-cocktails">
           <h4>Cocktails</h4>
           <div className="menu-items">
-            {data.cocktails.map((cocktail, index) =>
-                <MenuItem key={cocktail.title + index} title ={cocktail.title} price = {cocktail.price} tags = {cocktail.tags} />
-              )
-            }
+            {data.cocktails.map((cocktail, index) => (
+              <MenuItem
+                key={cocktail.title + index}
+                title={cocktail.title}
+                price={cocktail.price}
+                tags={cocktail.tags}
+              />
+            ))}
           </div>
         </section>
       </div>
 
-      <button className="header-button">View More</button>
+      <button
+        className="header-button"
+        onClick={() => {
+          setShowModal(true);
+          setMessage("This section is currently unavailable.");
+        }}
+      >
+        View More
+      </button>
     </div>
   );
 };

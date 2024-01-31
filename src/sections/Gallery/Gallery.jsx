@@ -2,7 +2,11 @@ import React from "react";
 import "./Gallery.css";
 import { images } from "../../constants";
 import { SubHeading } from "../../components/SubHeading/SubHeading";
-import { BsInstagram, BsArrowRightShort, BsArrowLeftShort } from 'react-icons/bs';
+import {
+  BsInstagram,
+  BsArrowRightShort,
+  BsArrowLeftShort,
+} from "react-icons/bs";
 
 const galleryImages = [
   images.gallery01,
@@ -11,18 +15,17 @@ const galleryImages = [
   images.gallery04,
 ];
 
-const Gallery = () => {
-
+const Gallery = ({ setMessage, setModalShow }) => {
   const scrollRef = React.useRef(null);
 
   const scroll = (direction) => {
     const { current } = scrollRef;
-    if(direction === 'left'){
-      current.scrollLeft -= 300
-    } else{
-      current.scrollLeft += 300
+    if (direction === "left") {
+      current.scrollLeft -= 300;
+    } else {
+      current.scrollLeft += 300;
     }
-  }
+  };
 
   return (
     <div className="gallery-container">
@@ -33,22 +36,39 @@ const Gallery = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
           mattis ipsum turpis elit elit scelerisque egestas mu.
         </p>
-        <button>View More</button>
+        <button
+          onClick={() => {
+            setShowModal(true);
+            setMessage("This section is currently unavailable.");
+          }}
+        >
+          View More
+        </button>
       </div>
 
       <div className="gallery-images">
         <div className="gallery-images-container" ref={scrollRef}>
           {galleryImages.map((image, index) => (
-            <div className="gallery-image-card" key={index} id = {`image-${index}`}>
-              <img src={image}/>
+            <div
+              className="gallery-image-card"
+              key={index}
+              id={`image-${index}`}
+            >
+              <img src={image} />
               <BsInstagram className="gallery-image-icon" />
             </div>
           ))}
         </div>
 
         <div className="gallery-images-arrows">
-            <BsArrowLeftShort className="gallery-images-arrows-icon" onClick={() => scroll('left')} />
-            <BsArrowRightShort className="gallery-images-arrows-icon" onClick={() => scroll('right')} />
+          <BsArrowLeftShort
+            className="gallery-images-arrows-icon"
+            onClick={() => scroll("left")}
+          />
+          <BsArrowRightShort
+            className="gallery-images-arrows-icon"
+            onClick={() => scroll("right")}
+          />
         </div>
       </div>
     </div>

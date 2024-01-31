@@ -1,0 +1,68 @@
+.container {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 3;
+}
+
+.modal-container {
+  background-color: black;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px;
+  width: 350px;
+  transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+
+.icon {
+  cursor: pointer;
+  color: var(--golden);
+  display: inline-block;
+  font-size: 20px;
+  align-self: flex-start;
+  margin-bottom:10px;
+}
+
+.icon:hover {
+  color: var(--grey);
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  color: black;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 20px;
+  width: 100px;
+}
+
+.button-accept {
+  background-color: var(--golden);
+}
+
+.button-accept:hover {
+  background-color: var(--grey);
+}
+
+@media (max-width: 768px) {
+  .modal-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
